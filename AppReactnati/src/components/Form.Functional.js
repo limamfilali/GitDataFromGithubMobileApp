@@ -31,6 +31,8 @@ const Form = (props) => {
 
   return (
     <View>
+      {isLoading ? <Text>chargement...</Text> : (
+        <View>
       <TextInput
         style={styles.input}
         value={input}
@@ -47,12 +49,17 @@ const Form = (props) => {
             if (input) {
               fetchUserData();
             }
+            else{
+              <Text>User n'existe pas</Text>
+            }
           }}
         />
       </View>
+      </View>
+      )}
+      </View>
+      
 
-      {isLoading ? <ActivityIndicator /> : null}
-    </View>
   );
 };
 

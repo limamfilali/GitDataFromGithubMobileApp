@@ -3,6 +3,8 @@ import { View, Text, FlatList, StyleSheet } from "react-native";
 import Repo from "./Repo";
 
 const ReposList = (props) => {
+ // const deleteRepo = (id) => {
+  // const newList = data.filter((code) => code.id !== id);//}}
   return (
     <View>
       {props.repos.length ? (

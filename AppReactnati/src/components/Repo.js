@@ -14,9 +14,11 @@ const Repo = (props) => {
         navigate.navigate("Repo", { repo: item });
       }}
     >
-      <Text style={styles.repoNameText}>{item.name}</Text>
-      <Text style={styles.languageText}>{item.language || "No language"}</Text>
-      <Text>Forks: {item.forks_count}</Text>
+      
+      <Text>id :{item.id}</Text>
+      <Text style={styles.repoNameText}>Nom :{item.name}</Text>
+      <Text style={styles.languageText}>Langage :{item.language || "No language"}</Text>
+      <Text>visibilité: {item.visibility}</Text>
       <Text>Open issues: {item.open_issues_count}</Text>
       <View style={styles.horizontalLine} />
     </TouchableOpacity>

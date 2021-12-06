@@ -8,7 +8,8 @@ const RepoScreen = (props) => {
   return (
     <View>
       <Repo item={repo} />
-      <Text>other stuff</Text>
+      <Text style={{color:"red"}}>Autres propriéties :</Text>
+      <Text>visibilité: {repo.visibility}</Text>
     </View>
   );
 };

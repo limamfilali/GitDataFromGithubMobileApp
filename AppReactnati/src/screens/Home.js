@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, SafeAreaView } from "react-native";
+import { View, StyleSheet, SafeAreaView ,Text} from "react-native";
 import Form from "../components/Form.Functional";
 import User from "../components/User";
 import ReposList from "../components/ReposList";
